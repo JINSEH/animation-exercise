@@ -1,0 +1,158 @@
+body{
+  height: 5000px;
+}
+
+/* CSS for topbar */
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
+  height: 117px;
+}
+
+.topbar-left{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.homelogo{
+  width: 400px;
+  height: 50px;
+  position:absolute;
+  left:40%;
+}
+
+.homenabout{
+    font-family: 'playfair-display';
+    font-size: 21px;
+}
+
+.svg{
+  max-width: 30px;
+}
+
+div p, a{
+  font-size: 20px;
+}
+
+#breakline{
+  margin: 0;
+}
+
+/* CSS for Spotlight showcase */
+.spotlight{
+  width: 50vw;
+  height: 50vh;
+}
+
+.heading-title{
+  font-family:'playfair-display';
+  font-size: 30px;
+}
+
+#beige{
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 996px) {
+  .svg, .topbar-left {
+    display: none;
+  }
+  
+  .homelogo {
+    position: relative;
+    left: 17vw;
+  }
+}
+
+/* CSS for filters and sorting */
+#svg1{
+  height: 20px;
+  width: 20px;
+}
+
+#svg2{
+  height: 13px;
+  width: 13px;
+}
+
+/* CSS for products showcase */
+.products{
+  display: grid;
+  grid-template-columns: repeat(4, 21vw);
+  grid-row-gap: 150px;
+  justify-content: center;
+}
+
+.productimg{
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+}
+
+.product_title{
+  font-family: 'playfair-display';
+  font-size: 20px;
+}
+
+@media (max-width: 1563px) {
+  .products{
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    justify-content: center;
+  }
+
+  .productimg{
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 80%;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .seemorebutton{
+    margin-top: 70px;
+  }
+}
+
+/* CSS for load more and see more buttons */
+.invisible{
+  height: 200px;
+}
+
+.seemorebutton {
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  padding: 20px;
+  font-family: 'playfair-display';
+  text-align: center;
+  font-size: 16PX;
+  width: 150px;
+}
+
+.seemorebutton:hover {
+  background-color: #f8f8f8;
+}
+
+/*CSS for mangata treasures*/
+.playfair {
+  font-family: 'playfair-display';
+  font-size: 20px;
+}
+
+.creation-title{
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+section {
+  cursor: pointer;
+}
