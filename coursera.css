@@ -1,6 +1,22 @@
-body{
-  height: 5000px;
+ /*Header for logo */
+.header-logo{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
 }
+
+.homelogo{
+  width: 400px;
+  height: 50px;
+}
+
+#search-icon{
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
 
 /* CSS for topbar */
 .topbar{
@@ -18,24 +34,10 @@ body{
   justify-content: space-between;
 }
 
-.homelogo{
-  width: 400px;
-  height: 50px;
-  position:absolute;
-  left:40%;
-}
 
 .homenabout{
     font-family: 'playfair-display';
     font-size: 21px;
-}
-
-.svg{
-  max-width: 30px;
-}
-
-div p, a{
-  font-size: 20px;
 }
 
 #breakline{
@@ -55,17 +57,6 @@ div p, a{
 
 #beige{
   background-color: #f8f8f8;
-}
-
-@media (max-width: 996px) {
-  .svg, .topbar-left {
-    display: none;
-  }
-  
-  .homelogo {
-    position: relative;
-    left: 17vw;
-  }
 }
 
 /* CSS for filters and sorting */
@@ -153,6 +144,127 @@ div p, a{
   font-weight: lighter;
 }
 
-section {
+article {
   cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+/* CSS for Delivery Order Info */
+.delivery-order-container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 20vw);
+}
+
+
+.delivery-order-section{
+  display: flex;
+  align-items: center;
+  font-family: "playfair-display";
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10px;
+}
+
+.delivery-order-section p:first-of-type {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.delivery-order-section p:last-of-type{
+  font-size: large;
+}
+.delivery-order-icon{
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width:1563px) {
+  .delivery-order-container{
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    row-gap: 15px;
+  }
+}
+
+/* CSS for footer elements */
+.footer-element{
+  background-color: #ece6d7;
+}
+
+/* CSS for button to top */
+.back-to-top{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#arrowup{
+  width: 30px;
+  height: 30px;
+}
+
+/* CSS for newsletter */
+.newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "playfair-display";
+  height: 300px;
+  row-gap: 15px;
+}
+
+.email-submit{
+  width: 300px;
+  height: 50px;
+}
+
+.submit-button{
+  border: none;
+  background-color: #012969;
+  width: 150px;
+  color: white;
+}
+
+/* Copyright Section CSS */
+.copyright-section{
+  height: 100px;
+  background-color:#ece6d7;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.footer-logo-section{
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-text-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+
+
+#footer-logo-1{
+  width: 50%;
+  height: 100%;
+}
+
+#footer-logo-2{
+  width: 25%;
+  height: 75%;
+
+}
+
+#copyright{
+  width: 15px;
+  height: 15px;
 }

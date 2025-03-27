@@ -11,192 +11,270 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--Top navbar-->
-  <nav class="topbar container">
-    <div class="topbar-left">
-      <a href="#" class="text-dark text-decoration-none homenabout">Home</a>
-      <a href="#" class="text-dark text-decoration-none">
-        <p class="homenabout">About</p>
-      </a>
-    </div>
+  <!--Header for Logo-->
+  <header class="container header-logo">
     <img class="homelogo" src="images/asset2.png" alt="Store logo">
-    <a href="#" class="text-dark text-decoration-none">
-      <svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+  </header>
+
+
+  <!--Top navbar-->
+  <nav class="container d-flex justify-content-between mb-4">
+    <a class="text-decoration-none text-dark" href="#">Home</a>
+    <a class="text-decoration-none text-dark" href="#">About</a>
+    <a class="text-decoration-none text-dark" href="#">Products</a>
+    <div class="d-flex justify-content-between align-items-center">
+      <a class="text-decoration-none text-dark" href="#">Search</a>
+      <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
         <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
-      </svg>
-    </a>
+        </svg>
+    </div>
   </nav>
   
   <hr id="breakline">
   
   <!--Spotlight Showcase-->
-  <div class="d-flex border-bottom">
-    <img src="images/jewellery/spotlight.png" class="img-fluid spotlight" alt="">
-    <div class="d-flex justify-content-center w-50" id="beige">
-      <div class="d-flex justify-content-center flex-column w-75">
-        <p class="heading-title">
-          Mangata & Gallo Sunlight
-        </p>
-        <p class="lead">Heir to the flamboyant legacy</p>
-        <p class="lead">The solar expression of the Maison bursting creative energy. Crafted for those who embrace life's endless beauty. </p>
+  <main>
+    <article class="d-flex border-bottom">
+      <img src="images/jewellery/spotlight.png" class="img-fluid spotlight" alt="">
+      <div class="d-flex justify-content-center w-50" id="beige">
+        <div class="d-flex justify-content-center flex-column w-75">
+          <p class="heading-title">
+            Mangata & Gallo Sunlight
+          </p>
+          <p class="lead">Heir to the flamboyant legacy</p>
+          <p class="lead">The solar expression of the Maison bursting creative energy. Crafted for those who embrace life's endless beauty. </p>
+        </div>
       </div>
-    </div>
-  </div>
+    </article>
+    
+    <!--Filters and sorting for products-->
+    <section class="d-flex justify-content-between m-4">
+      <div class="d-flex gap-2 align-items-center">
+        <p class="lead m-0">Filters</p>
+        <a href="#">
+          <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path d="M 88 76.795 H 55.115 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 76.795 88 76.795 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 54.332 17.205 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 52.332 c 1.104 0 2 0.896 2 2 S 55.437 17.205 54.332 17.205 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 88 47 H 30.766 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 47 88 47 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 35.668 76.795 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 33.668 c 1.104 0 2 0.896 2 2 S 36.773 76.795 35.668 76.795 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 12.103 47 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 10.103 c 1.104 0 2 0.896 2 2 S 13.207 47 12.103 47 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 88 17.205 H 73.177 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 17.205 88 17.205 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 54.332 86.127 H 35.668 c -1.104 0 -2 -0.896 -2 -2 V 65.463 c 0 -1.104 0.896 -2 2 -2 h 18.664 c 1.104 0 2 0.896 2 2 v 18.664 C 56.332 85.231 55.437 86.127 54.332 86.127 z M 37.668 82.127 h 14.664 V 67.463 H 37.668 V 82.127 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 30.766 56.332 H 12.103 c -1.104 0 -2 -0.896 -2 -2 V 35.668 c 0 -1.104 0.896 -2 2 -2 h 18.664 c 1.104 0 2 0.896 2 2 v 18.664 C 32.766 55.437 31.871 56.332 30.766 56.332 z M 14.103 52.332 h 14.664 V 37.668 H 14.103 V 52.332 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 72.995 26.537 H 54.332 c -1.104 0 -2 -0.896 -2 -2 V 5.873 c 0 -1.104 0.896 -2 2 -2 h 18.663 c 1.104 0 2 0.896 2 2 v 18.664 C 74.995 25.641 74.1 26.537 72.995 26.537 z M 56.332 22.537 h 14.663 V 7.873 H 56.332 V 22.537 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="d-flex align-items-center gap-2">
+        <p class='lead m-0'>Sort By: <b>Pertinence</b></p>
+        <a href="#" class="m-0">
+          <svg id="svg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewBox="0 0 256 256" xml:space="preserve">
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path d="M 90 23.25 c 0 -0.384 -0.146 -0.768 -0.439 -1.061 c -0.586 -0.586 -1.535 -0.586 -2.121 0 L 45 64.629 L 2.561 22.189 c -0.585 -0.586 -1.536 -0.586 -2.121 0 c -0.586 0.586 -0.586 1.535 0 2.121 l 43.5 43.5 c 0.585 0.586 1.536 0.586 2.121 0 l 43.5 -43.5 C 89.854 24.018 90 23.634 90 23.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+      
+    </section>
+    
+    <hr>
+    
+    <!--Product showcase-->
+    <section class="products container">
+      
+      <!--Product 1-->
+      <div class="container product1">
+        <img class="productimg product1img" src="images/jewellery/product1.webp" alt="">
+        <img class="productimg productimg1_1" src="images/jewellery/product1-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Sunlight pendant</p>
+          <p class="lead fs-6">Rose Gold Diamond Pendant</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+      
+      <!--Product 2-->
+      <div class="container product2">
+        <img class="productimg product2img" src="images/jewellery/product2.webp" alt="">
+        <img class="productimg productimg2_1" src="images/jewellery/product2-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Diamond pendant</p>
+          <p class="lead fs-6">Rose Gold Mother-of-Pearl Diamond Pendant</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+      
+      <!--Product 3-->
+      <div class="container product3">
+        <img class="productimg product3img" src="images/jewellery/product3.webp" alt="">
+        <img class="productimg productimg3_1" src="images/jewellery/product3-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Emerald pendant</p>
+          <p class="lead fs-6">Rose Gold Malachite Emerald Pendant</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+      
+      <!--Product 4-->
+      <div class="container product4">
+        <img class="productimg product4img" src="images/jewellery/product4.webp" alt="">
+        <img class="productimg productimg4_1" src="images/jewellery/product4-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Sunlight earrings</p>
+          <p class="lead fs-6">Rose Gold Diamond Earrings</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
   
-  <!--Filters and sorting for products-->
-  <main class="d-flex justify-content-between m-4">
-    <div class="d-flex gap-2 align-items-center">
-      <p class="lead m-0">Filters</p>
-      <a href="#">
-        <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-            <path d="M 88 76.795 H 55.115 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 76.795 88 76.795 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 54.332 17.205 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 52.332 c 1.104 0 2 0.896 2 2 S 55.437 17.205 54.332 17.205 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 88 47 H 30.766 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 47 88 47 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 35.668 76.795 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 33.668 c 1.104 0 2 0.896 2 2 S 36.773 76.795 35.668 76.795 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 12.103 47 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 10.103 c 1.104 0 2 0.896 2 2 S 13.207 47 12.103 47 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 88 17.205 H 73.177 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 17.205 88 17.205 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 54.332 86.127 H 35.668 c -1.104 0 -2 -0.896 -2 -2 V 65.463 c 0 -1.104 0.896 -2 2 -2 h 18.664 c 1.104 0 2 0.896 2 2 v 18.664 C 56.332 85.231 55.437 86.127 54.332 86.127 z M 37.668 82.127 h 14.664 V 67.463 H 37.668 V 82.127 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 30.766 56.332 H 12.103 c -1.104 0 -2 -0.896 -2 -2 V 35.668 c 0 -1.104 0.896 -2 2 -2 h 18.664 c 1.104 0 2 0.896 2 2 v 18.664 C 32.766 55.437 31.871 56.332 30.766 56.332 z M 14.103 52.332 h 14.664 V 37.668 H 14.103 V 52.332 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            <path d="M 72.995 26.537 H 54.332 c -1.104 0 -2 -0.896 -2 -2 V 5.873 c 0 -1.104 0.896 -2 2 -2 h 18.663 c 1.104 0 2 0.896 2 2 v 18.664 C 74.995 25.641 74.1 26.537 72.995 26.537 z M 56.332 22.537 h 14.663 V 7.873 H 56.332 V 22.537 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-          </g>
-        </svg>
-      </a>
+      <!--Product 5-->
+      <div class="container product5">
+        <img class="productimg product5img" src="images/jewellery/product5.webp" alt="">
+        <img class="productimg productimg5_1" src="images/jewellery/product5-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Sunlight earrings</p>
+          <p class="lead fs-6">Rose Gold Diamond Earrings</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+  
+      <!--Product 6-->
+      <div class="container product6">
+        <img class="productimg product6img" src="images/jewellery/product6.webp" alt="">
+        <img class="productimg productimg6_1" src="images/jewellery/product6-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Sunlight earrings</p>
+          <p class="lead fs-6">Rose Gold Diamond Earrings</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+  
+      <!--Product 7-->
+      <div class="container product7">
+        <img class="productimg product7img" src="images/jewellery/product7.webp" alt="">
+        <img class="productimg productimg7_1" src="images/jewellery/product7-1.jpg" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Sunlight earrings</p>
+          <p class="lead fs-6">Rose Gold Diamond Earrings</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+  
+      <!--Product 8-->
+      <div class="container product8">
+        <img class="productimg product8img" src="images/jewellery/product8.webp" alt="">
+        <img class="productimg productimg8_1" src="images/jewellery/product8-1.webp" alt="">
+        <div class="mt-3">
+          <p class="product_title">Mangata & Gallo Sunlight earrings</p>
+          <p class="lead fs-6">Rose Gold Diamond Earrings</p>
+          <p class="description fs-6">Price available upon request</p>
+        </div>
+      </div>
+      
+    </section>
+  
+    <!--Invisible div-->
+    <div class="invisible"></div>
+  
+    <!--See more buttons-->
+    <div class="d-flex justify-content-center gap-3">
+      <button class="seemorebutton">
+        LOAD MORE
+      </button>
+      <button class="seemorebutton">
+        SEE MORE
+      </button>
     </div>
-    
-    <div class="d-flex align-items-center gap-2">
-      <p class='lead m-0'>Sort By: <b>Pertinence</b></p>
-      <a href="#" class="m-0">
-        <svg id="svg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewBox="0 0 256 256" xml:space="preserve">
-          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-            <path d="M 90 23.25 c 0 -0.384 -0.146 -0.768 -0.439 -1.061 c -0.586 -0.586 -1.535 -0.586 -2.121 0 L 45 64.629 L 2.561 22.189 c -0.585 -0.586 -1.536 -0.586 -2.121 0 c -0.586 0.586 -0.586 1.535 0 2.121 l 43.5 43.5 c 0.585 0.586 1.536 0.586 2.121 0 l 43.5 -43.5 C 89.854 24.018 90 23.634 90 23.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-          </g>
-        </svg>
-      </a>
-    </div>
-    
+  
+    <!--Mangata treasures-->
+    <article class="mt-5 d-flex treasures">
+      <img src="images/treasures.jpg" class="img-fluid spotlight" alt="">
+      <div class="w-50 d-flex flex-column justify-content-center align-items-center">
+        <div class='d-flex flex-column justify-content-center align-items-center mb-5'>
+          <p class="playfair creation-title m-0">Our Creations</p>
+          <p class="playfair m-0">Mangata Treasures</p>
+        </div>
+        <a href="" class="playfair text-dark">Discover More</a>
+      </div>
+    </article>
+
+    <!--Delivery and order info for user-->
+    <section class="delivery-order-container container mt-5">
+
+      <!--Shop by phone-->
+      <div class="delivery-order-section">
+        <img class="delivery-order-icon" src="images/speech.svg" alt="">
+        <p>Shop by Phone</p>
+        <p>Order a creation or receive personalised advice from one of our Mangata & Gallo ambassador.</p>
+      </div>
+
+      <!--Delivery Info-->
+      <div class="delivery-order-section"> 
+        <img class="delivery-order-icon" src="images/box.svg" alt="">
+        <p>Delivery</p>
+        <p>Complimentary and Express</p>
+      </div>
+
+      <!--Secured Payment-->
+      <div class="delivery-order-section"> 
+        <img class="delivery-order-icon" src="images/cards.svg" alt="">
+        <p>Secured payment</p>
+        <p>Safe and secure payment.</p>
+      </div>
+      
+      <!--Free delivery and return-->
+      <div class="delivery-order-section">
+        <img class="delivery-order-icon" src="images/refresh.svg" alt="">
+        <p>Free delivery and return</p>
+        <p>Free return within 30 days.</p>
+      </div>
+
+    </section>
   </main>
-  
-  <hr>
-  
-  <!--Product showcase-->
-  <div class="products container">
-    
-    <!--Product 1-->
-    <div class="container product1">
-      <img class="productimg product1img" src="images/jewellery/product1.webp" alt="">
-      <img class="productimg productimg1_1" src="images/jewellery/product1-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Sunlight pendant</p>
-        <p class="lead fs-6">Rose Gold Diamond Pendant</p>
-        <p class="description fs-6">Price available upon request</p>
-      </div>
-    </div>
-    
-    <!--Product 2-->
-    <div class="container product2">
-      <img class="productimg product2img" src="images/jewellery/product2.webp" alt="">
-      <img class="productimg productimg2_1" src="images/jewellery/product2-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Diamond pendant</p>
-        <p class="lead fs-6">Rose Gold Mother-of-Pearl Diamond Pendant</p>
-        <p class="description fs-6">Price available upon request</p>
-      </div>
-    </div>
-    
-    <!--Product 3-->
-    <div class="container product3">
-      <img class="productimg product3img" src="images/jewellery/product3.webp" alt="">
-      <img class="productimg productimg3_1" src="images/jewellery/product3-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Emerald pendant</p>
-        <p class="lead fs-6">Rose Gold Malachite Emerald Pendant</p>
-        <p class="description fs-6">Price available upon request</p>
-      </div>
-    </div>
-    
-    <!--Product 4-->
-    <div class="container product4">
-      <img class="productimg product4img" src="images/jewellery/product4.webp" alt="">
-      <img class="productimg productimg4_1" src="images/jewellery/product4-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Sunlight earrings</p>
-        <p class="lead fs-6">Rose Gold Diamond Earrings</p>
-        <p class="description fs-6">Price available upon request</p>
-      </div>
-    </div>
 
-    <!--Product 5-->
-    <div class="container product5">
-      <img class="productimg product5img" src="images/jewellery/product5.webp" alt="">
-      <img class="productimg productimg5_1" src="images/jewellery/product5-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Sunlight earrings</p>
-        <p class="lead fs-6">Rose Gold Diamond Earrings</p>
-        <p class="description fs-6">Price available upon request</p>
+  <hr class="mt-5">
+
+  <!--Footer for copyright-->
+  <footer class='footer-element'>
+    <!--Back to top button-->
+    <section class="back-to-top">
+      <a href="#">
+        <img id="arrowup" src="images/arrowup.svg" alt="">
+      </a>
+      <p>Back to Top</p>
+    </section>
+
+    <!--Newsletter Section-->
+    <section class="newsletter">
+      <p class="lead fs-3">SUBSCRIBE TO THE NEWSLETTER</p>
+      <p class="fs-5">Stay up to date with all Managata & Gallo news</p>
+      <div class="d-flex email-submit">
+        <input class="w-75" type="email" placeholder="Email">
+        <button class="submit-button" type="submit">SUBMIT</button>
       </div>
-    </div>
+    </section>
 
-    <!--Product 6-->
-    <div class="container product6">
-      <img class="productimg product6img" src="images/jewellery/product6.webp" alt="">
-      <img class="productimg productimg6_1" src="images/jewellery/product6-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Sunlight earrings</p>
-        <p class="lead fs-6">Rose Gold Diamond Earrings</p>
-        <p class="description fs-6">Price available upon request</p>
+    <hr class="mb-0">
+
+    <!--Copyright Section-->
+    <section class="copyright-section">
+      <div class="footer-logo-section">
+        <img id="footer-logo-1" src="images/asset2.png" alt="">
       </div>
-    </div>
-
-    <!--Product 7-->
-    <div class="container product7">
-      <img class="productimg product7img" src="images/jewellery/product7.webp" alt="">
-      <img class="productimg productimg7_1" src="images/jewellery/product7-1.jpg" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Sunlight earrings</p>
-        <p class="lead fs-6">Rose Gold Diamond Earrings</p>
-        <p class="description fs-6">Price available upon request</p>
+      
+      <div class="footer-logo-section">
+        <img id="footer-logo-2" src="images/asset1.png" alt="">
       </div>
-    </div>
-
-    <!--Product 8-->
-    <div class="container product8">
-      <img class="productimg product8img" src="images/jewellery/product8.webp" alt="">
-      <img class="productimg productimg8_1" src="images/jewellery/product8-1.webp" alt="">
-      <div class="mt-3">
-        <p class="product_title">Mangata & Gallo Sunlight earrings</p>
-        <p class="lead fs-6">Rose Gold Diamond Earrings</p>
-        <p class="description fs-6">Price available upon request</p>
+      
+      <div class="copyright-text-section">
+        <img id="copyright" src="images/copyright.svg" alt="">
+        Copyright Mangata & Gallo 2025
       </div>
-    </div>
-    
-  </div>
-
-  <!--Invisible div-->
-  <div class="invisible"></div>
-
-  <!--See more buttons-->
-  <div class="d-flex justify-content-center gap-3">
-    <button class="seemorebutton">
-      LOAD MORE
-    </button>
-    <button class="seemorebutton">
-      SEE MORE
-    </button>
-  </div>
-
-  <!--Mangata treasures-->
-  <section class="mt-5 d-flex">
-    <img src="images/treasures.jpg" class="img-fluid spotlight" alt="">
-    <div class="w-50 d-flex flex-column justify-content-center align-items-center">
-      <div class='d-flex flex-column justify-content-center align-items-center mb-5'>
-        <p class="playfair creation-title m-0">Our Creations</p>
-        <p class="playfair m-0">Mangata Treasures</p>
-      </div>
-      <a href="" class="playfair text-dark">Discover More</a>
-    </div>
-  </section>
-
+    </section>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="coursera.js"></script>
